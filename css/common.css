@@ -41,7 +41,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 16px;
+  gap: 16px;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 0 auto;
 }
 
 .gallery img {
