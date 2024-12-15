@@ -119,3 +119,39 @@ ul {
   outline: none;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
 }
+
+.widget {
+  width: 169px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.change-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  border: 2px solid #4e75ff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: #6c8cff;
+  border: #6c8cff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
