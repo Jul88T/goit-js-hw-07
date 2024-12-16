@@ -36,7 +36,7 @@ function destroyBoxes() {
 function createBoxes(amount) {
   let size = 30;
   const boxesArr = [];
-  for (let i = 0; i < amount; i += 1) {
+  for (let i = 0; i < amount; i++) {
     size += 10;
     const div = `<div class="item" style="display: block; margin-right: 30px; margin-bottom: 30px; background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"></div>`;
     boxesArr.push(div);
