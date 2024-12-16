@@ -37,6 +37,13 @@ ul {
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
 }
 
+ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +134,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 16px;
+  margin-bottom: 0;
 }
 
 .change-color {
@@ -154,4 +161,89 @@ ul {
   border: #6c8cff;
   outline: none;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+#controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 486px;
+  height: 104px;
+}
+
+/* Стили для инпута */
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 150px;
+  text-align: center;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  outline: none;
+}
+
+input[type="number"]:focus {
+  border-color: #6c8cff;
+}
+
+/* Кнопки */
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 120px;
+  height: 40px;
+}
+
+.destroy {
+  background: #ff4e4e;
+}
+
+.destroy:hover {
+  background: #ff7070;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* Контейнер для квадратов */
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: center;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Стили для квадратов */
+#boxes div {
+  width: 30px;
+  height: 30px;
+  background-color: #ff6347;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+#boxes div:hover {
+  transform: scale(1.1);
 }
